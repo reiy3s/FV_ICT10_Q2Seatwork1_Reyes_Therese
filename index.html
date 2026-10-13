@@ -16,42 +16,39 @@
         text-align: center;
     }
 
+    body{
+        margin-top: 7%;
+        background-color: #dcd2f7;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    #name{
+        size: 50px;
+    }
+
 </style>
 
 <body>
 
-    <div>
-        <form>
-
-        </form>
-    </div>
-
     <div class="container text-center" id="form-div">
         <br><br>
 
-        <h1> Something Club </h1>
+        <h1> Sugar, Spice, And Everything Nice Club </h1>
         <h3> Candidate Verification System </h3>
-
-        <details class="ontoggle">
-            <summary><i>Instructions</i></summary>
-            <p id="instructions">Enter your stuff to log back in!</p>
-        </details>
 
         <form>
 
             <div>
-                    <label for="user"><b>First Name:</b></label>
-                    <input type="text" name="user" id="user" placeholder="Enter your super secret name here..." class="form-control">
+                    <label for="fn"><b>First Name:</b></label>
+                    <input type="text" name="fn" id="name" placeholder="Enter your first name here..." class="form-control">
 
                 <br>
 
-                    <label for="user"><b>Last Name:</b></label>
-                    <input type="text" name="user" id="user" placeholder="Enter your super secret name here..." class="form-control">
+                    <label for="ln"><b>Last Name:</b></label>
+                    <input type="text" name="ln" id="name" placeholder="Enter your last name here..." class="form-control">
 
                 <br>
-
-                    <label for="checkbox">Remember me?</label>
-                    <input type="checkbox" name="checkbox-rmbr" id="rmbr" class="" onclick="checkbox()">
 
             <i><div id="display"></div></i><br>
 
