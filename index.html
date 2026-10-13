@@ -14,25 +14,32 @@
 
     #form-div{
         text-align: center;
+        color: rgb(239, 232, 250);
+        background-color: #51405b;
+        width: 50%;
+        margin: auto;
+        border-radius: 10px;
+        border: 5px solid #170b1d;
     }
 
     body{
-        margin-top: 7%;
+        margin-top: 20%;
         background-color: #dcd2f7;
         font-family: Arial, sans-serif;
         text-align: center;
     }
 
-    #name{
+    input[type="text"]{
         size: 50px;
+        width: 50%;
     }
 
 </style>
 
 <body>
 
+
     <div class="container text-center" id="form-div">
-        <br><br>
 
         <h1> Sugar, Spice, And Everything Nice Club </h1>
         <h3> Candidate Verification System </h3>
@@ -40,21 +47,19 @@
         <form>
 
             <div>
-                    <label for="fn"><b>First Name:</b></label>
-                    <input type="text" name="fn" id="name" placeholder="Enter your first name here..." class="form-control">
+                    <input type="text" name="fn" id="fn" placeholder="Enter your first name here..." class="form-control">
 
-                <br>
+                <br><br>
 
-                    <label for="ln"><b>Last Name:</b></label>
-                    <input type="text" name="ln" id="name" placeholder="Enter your last name here..." class="form-control">
+                    <input type="text" name="ln" id="ln" placeholder="Enter your last name here..." class="form-control">
 
                 <br>
 
             <i><div id="display"></div></i><br>
 
-            <button type="button" pyclick="get_IN">Login</button>
+            <button type="button" py-click="get_IN">Verify</button>
 
-        <br><br></form>
+        <br></form>
     </div>
 
     <div>

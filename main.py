@@ -1,10 +1,12 @@
-from pyscript import display, document
+from pyscript import display, document #link to index...?
 
-members = ["Zoey Ledres", "Cheree Mendoza", "Princess Schwab", "Therese Reyes", "Elise Ramos"]
+members = ["Zoey Ledres", "Cheree Mendoza", "Princess Schwab", "Therese Reyes", "Elise Ramos"] #im pretty sure this is the ganglang thats allowed
 
 def get_IN(e):
-    document.getElementById("output").innerHTML = ""
     name1 = document.getElementById("fn").value
     name2 = document.getElementById("ln").value
 
-    print(f'{name1} {name2}', target = "output")
+    full_name = f"{name1.strip()} {name2.strip()}" #combines name
+    is_member = full_name in members #true or false
+
+    display("Oops! Are you sure you're part of this club?", target="output") #displays when not a member (?)
