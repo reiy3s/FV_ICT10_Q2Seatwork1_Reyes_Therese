@@ -12,19 +12,56 @@
 
 <style>
 
-    body{
-
+    #form-div{
+        text-align: center;
     }
 
 </style>
 
 <body>
 
-    <h1> Something Club </h1>
-    <h3> Candidate Verification System </h3>
+    <div>
+        <form>
+
+        </form>
+    </div>
+
+    <div class="container text-center" id="form-div">
+        <br><br>
+
+        <h1> Something Club </h1>
+        <h3> Candidate Verification System </h3>
+
+        <details class="ontoggle">
+            <summary><i>Instructions</i></summary>
+            <p id="instructions">Enter your stuff to log back in!</p>
+        </details>
+
+        <form>
+
+            <div>
+                    <label for="user"><b>First Name:</b></label>
+                    <input type="text" name="user" id="user" placeholder="Enter your super secret name here..." class="form-control">
+
+                <br>
+
+                    <label for="user"><b>Last Name:</b></label>
+                    <input type="text" name="user" id="user" placeholder="Enter your super secret name here..." class="form-control">
+
+                <br>
+
+                    <label for="checkbox">Remember me?</label>
+                    <input type="checkbox" name="checkbox-rmbr" id="rmbr" class="" onclick="checkbox()">
+
+            <i><div id="display"></div></i><br>
+
+            <button type="button" pyclick="get_IN">Login</button>
+
+        <br><br></form>
+    </div>
 
     <div>
-
+        <p id="output"></p>
     </div>
 
     <script type="py" src="main.py"></script>
